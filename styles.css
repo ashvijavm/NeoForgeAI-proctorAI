@@ -1,0 +1,40 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f6f3;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Login Page */
+#login-page {
+    background: rgb(149, 148, 216);
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Exam Page */
+#exam-page {
+    background: rgb(140, 105, 117);
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #0c5c66;
+    border-radius: 5px;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}

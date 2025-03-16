@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam System</title>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="login-page">
+        <h2>Login to Start Exam</h2>
+        <input type="text" id="username" placeholder="Username" autocomplete="off">
+        <input type="password" id="password" placeholder="Password" autocomplete="new-password">
+        <button id="login-button">Login</button>
+    </div>
+
+    <!-- Exam Page (Initially Hidden) -->
+    <div id="exam-page" class="hidden">
+        <h2>Online Examination</h2>
+        <p id="risk-level">Risk Level: Low</p>
+
+        <div id="questions-container"></div>
+
+        <button id="submit-button">Submit Exam</button>
+    </div>
+
+    <!-- Results & Graphs (Initially Hidden) -->
+    <div id="results-page" class="hidden">
+        <h2>✅ Examination Completed</h2>
+        <p>Thank you for participating.</p>
+        <h3 id="final-score"></h3>
+
+        <h3>📊 Score Distribution</h3>
+        <canvas id="scoreChart"></canvas>
+
+        <h3>📈 Risk Level Over Time</h3>
+        <canvas id="riskChart"></canvas>
+
+        <h3>⚡ Activity Breakdown</h3>
+        <canvas id="activityChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
